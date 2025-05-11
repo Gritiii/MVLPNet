@@ -94,5 +94,5 @@ sh test.sh
 
 
 ## 👏 Acknowledgements
-The project is based on [PFENet](https://github.com/dvlab-research/PFENet) , [R2Net](https://github.com/chunbolang/R2Net) and [PI-CLIP](https://github.com/vangjin/PI-CLIP). Thanks for the authors for their efforts.
+The project is based on [PFENet](https://github.com/dvlab-research/PFENet) , [R2Net](https://github.com/chunbolang/R2Net), [DMNet](https://github.com/HanboBizl/DMNet/) and [PI-CLIP](https://github.com/vangjin/PI-CLIP). Thanks for the authors for their efforts.
 
