@@ -48,7 +48,7 @@
 iSAID.tar.gz : https://pan.baidu.com/s/11ZhZ01KVjfPyHcoZ2MkfeA password: 0000
 
 - iSAID_256:
-iSAID.tar.gz : https://pan.baidu.com/s/11ZhZ01KVjfPyHcoZ2MkfeA](https://pan.baidu.com/s/1WgZBH075gjmypS4NbiLaXg password: 0000 
+iSAID.tar.gz : https://pan.baidu.com/s/1WgZBH075gjmypS4NbiLaXg password: 0000 
 
 - LoveDA:
 LoveDA.tar.gz : https://pan.baidu.com/s/1XG7zsh5uTOerffrE73cj2g password: 0000 
