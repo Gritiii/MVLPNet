@@ -75,7 +75,7 @@ def _transform_resize(h, w):
 def img_ms_and_flip(que_img, ori_height, ori_width, scales=[1.0], patch_size=16):
 
     for scale in scales:
-        preprocess = _transform_resize(int(np.ceil(scale * int(ori_height) / patch_size) * patch_size), int(np.ceil(scale * int(ori_width) / patch_size) * patch_size))
+        preprocess = _transform_resize(224,224)
         que_img = que_img.cpu().detach().numpy().astype(np.uint8)
         que_img = Image.fromarray(que_img.transpose(1,2,0))
         image = preprocess(que_img)
