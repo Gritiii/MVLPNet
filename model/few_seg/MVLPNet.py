@@ -323,11 +323,11 @@ class OneModel(nn.Module):
         self.fp16 = args.fp16
         self.backbone = args.backbone
         self.base_class_num = args.base_class_num
-        self.clip_model, _ = clip.load('/data6/zhenhaoyang/FSS/R2Net-main/initmodel/clip/ViT-B-16.pt')  
+        self.clip_model, _ = clip.load('/data6/zhenhaoyang/FSS/ViT-B-16.pt')  
         for param in self.clip_model.parameters():
             param.requires_grad = False
-        for param in self.clip_model.visual.transformer.resblocks[-1].parameters():
-            param.requires_grad = True
+        for param in self.clip_model.visual.transformer.resblocks[-1].ln_1.parameters():
+            param.requires_grad = True  
         self.bg_text_features = zeroshot_classifier(isaid_class_names, ['a photo without {}.'],
                                                         self.clip_model)
         self.fg_text_features = zeroshot_classifier(isaid_class_names, ['a photo of {}.'],
