@@ -53,7 +53,7 @@ def get_parser():
     base_config = 'config/base.yaml'
     data_config = 'config/dataset/{}.yaml'.format(args.cross_domain)
     print(data_config)
-    if args.arch in ['CMSANet']:
+    if args.arch in ['MVLPNet']:
         model_config = 'config/model/few_seg/{}.yaml'.format(args.arch)
     else:
         model_config = 'config/model/workdir/{}.yaml'.format(args.arch)
@@ -140,7 +140,6 @@ def main():
     train_transform_tri = transform2.Compose([
         transform2.RandScale([0.9, 1.1]),
         transform2.RandRotate([-10, 10], padding=mean,ignore_label=255),
-        transform2.RandomHorizontalFlip(),
         transform2.Resize([512, 512]),
         transform2.ToTensor()
         ])
@@ -148,7 +147,36 @@ def main():
      transform2.Resize(512),
      transform2.ToTensor()])
     
-
+    train_transform_tri = transform2.Compose([
+        transform2.RandScale([0.9, 1.1]),
+        transform2.RandRotate([-10, 10], padding=mean,ignore_label=255),
+        transform2.Resize([512, 512]),
+        transform2.ToTensor()
+        ])
+    val_transform_tri = transform2.Compose([
+     transform2.Resize(512),
+     transform2.ToTensor()])
+    ## iSAID_256
+    # train_transform_tri = transform2.Compose([
+    #     transform2.RandScale([0.9, 1.1]),
+    #     transform2.RandRotate([-10, 10], padding=mean,ignore_label=255),
+    #     transform2.Resize([256, 256]),
+    #     transform2.ToTensor()
+    #     ])
+    # val_transform_tri = transform2.Compose([
+    #  transform2.Resize(256),
+    #  transform2.ToTensor()])
+      ## LoveDA
+    # train_transform_tri = transform2.Compose([
+    #     transform2.RandScale([0.9, 1.1]),
+    #     transform2.RandRotate([-10, 10], padding=mean,ignore_label=255),
+    #     transform2.Resize([473, 473]),
+    #     transform2.ToTensor()
+    #     ])
+    # val_transform_tri = transform2.Compose([
+    #  transform2.Resize(473),
+    #  transform2.ToTensor()])
+  
 
 
 
