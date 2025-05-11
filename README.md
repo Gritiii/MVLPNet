@@ -20,6 +20,9 @@
 |   |   ├─backbone
 |   |   ├─clip
 |   ├─lists
+|   |   ├─iSAID
+|   |   ├─LoveDA
+|   |   ├─iSAID_256
 |   ├─initmodel
 |   |     ├─PSPNet
 |   |     ├─CLIP
