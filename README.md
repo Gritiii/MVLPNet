@@ -95,4 +95,14 @@ sh test.sh
 
 ## 👏 Acknowledgements
 The project is based on [PFENet](https://github.com/dvlab-research/PFENet) , [R2Net](https://github.com/chunbolang/R2Net), [DMNet](https://github.com/HanboBizl/DMNet/) and [PI-CLIP](https://github.com/vangjin/PI-CLIP). Thanks for the authors for their efforts.
-
+Please cite our paper if you find it is useful for your research.
+@ARTICLE{11071646,
+  author={Yang, Zhenhao and Bi, Fukun and Han, Jianhong and Ma, Xianping and He, Chenglong and Liu, Wenkai},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Multimodal Visual-Language Prompt Network for Remote Sensing Few-Shot Segmentation}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Few-shot segmentation;remote sensing;text prompts;semantic segmentation},
+  doi={10.1109/TGRS.2025.3585878}}
