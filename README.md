@@ -62,8 +62,8 @@ LoveDA.tar.gz : https://pan.baidu.com/s/1XG7zsh5uTOerffrE73cj2g password: 0000
 
 - Option 1: training from scratch
 
-  Download the pre-trained backbones from (https://pan.baidu.com/s/1tWAUKYvP-sh_LcCOy1-P7Q password: 0000) and put them into the `MVLPNet/initmodel` directory.
-  The clip model is placed in the `MVLPNet/initmodel` directory: (https://pan.baidu.com/s/1vwtIinePOP7UdhrEDj4HKg password: 0000)
+  Download the pre-trained backbones from ([https://pan.baidu.com/s/1tWAUKYvP-sh_LcCOy1-P7Q](https://pan.baidu.com/s/19G_Cfue_YVwZ8Hkd0LTiOg) password: 2025) and put them into the `MVLPNet/initmodel` directory.
+  The clip model is placed in the `MVLPNet/initmodel` directory: ([https://pan.baidu.com/s/1vwtIinePOP7UdhrEDj4HKg](https://pan.baidu.com/s/105EQcJMb-1OG-kv4I0l3ag) password: 2025)
   ```
   sh train_base.sh
   ```
@@ -74,7 +74,7 @@ LoveDA.tar.gz : https://pan.baidu.com/s/1XG7zsh5uTOerffrE73cj2g password: 0000
   cd initmodel
   ```
   
-  Put the provided (https://pan.baidu.com/s/1I4s8PLy4N5Qb7UeE7VsVXQ password: 0000) in the newly created folder `initmodel` and rename the downloaded file to `PSPNet`, *i.e.*, `MVLPNet/initmodel/PSPNet`.
+  Put the provided ([https://pan.baidu.com/s/1I4s8PLy4N5Qb7UeE7VsVXQ](https://pan.baidu.com/s/1Lo3ZFFvkSf3UjUk2_2SSaA) password: 2025) in the newly created folder `initmodel` and rename the downloaded file to `PSPNet`, *i.e.*, `MVLPNet/initmodel/PSPNet`.
 
 ### Training few-shot models
 
